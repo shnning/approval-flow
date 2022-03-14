@@ -59,3 +59,4 @@ interface DagLine {
 - [ ] 继续拆分并重构core/index.ts文件
 - [ ] 重构组件
 - [ ] 数据绑定
+- [ ] debug模式(展示node id)
