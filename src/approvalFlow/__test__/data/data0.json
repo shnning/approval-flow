@@ -1,0 +1,21 @@
+{
+  "lines":[
+      {
+          "id":"LINE-b641e-6c630",
+          "src_node_id":"START",
+          "dst_node_id":"END"
+      }
+  ],
+  "nodes":[
+      {
+          "id":"START",
+          "name":"申请人",
+          "type":"START"
+      },
+      {
+          "id":"END",
+          "name":"流程结束",
+          "type":"END"
+      }
+  ]
+}
