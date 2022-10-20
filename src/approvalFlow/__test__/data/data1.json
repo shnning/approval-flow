@@ -1,0 +1,48 @@
+{
+  "ret": 0,
+  "err_msg": "succ",
+  "cond": {
+    "lines": [
+      {
+        "id": "LINE-ba5d1-6b256",
+        "src_node_id": "START",
+        "dst_node_id": "APPROVAL-8ad74-3688a",
+        "rules": []
+      },
+      {
+        "id": "LINE-578ff-5e5cf",
+        "src_node_id": "APPROVAL-8ad74-3688a",
+        "dst_node_id": "CC-00c74-589b1",
+        "rules": []
+      },
+      {
+        "id": "LINE-9c420-361fd",
+        "src_node_id": "CC-00c74-589b1",
+        "dst_node_id": "END",
+        "rules": []
+      }
+    ],
+    "nodes": [
+      {
+        "id": "START",
+        "type": "START",
+        "name": "申请人"
+      },
+      {
+        "id": "APPROVAL-8ad74-3688a",
+        "type": "APPROVAL",
+        "name": "审批人"
+      },
+      {
+        "id": "CC-00c74-589b1",
+        "type": "CC",
+        "name": "抄送人"
+      },
+      {
+        "id": "END",
+        "type": "END",
+        "name": "流程结束"
+      }
+    ]
+  }
+}

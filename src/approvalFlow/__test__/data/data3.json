@@ -1,0 +1,167 @@
+{
+  "lines": [
+    {
+      "id": "LINE-2c7d6-935e7",
+      "src_node_id": "START",
+      "dst_node_id": "APPROVAL-8ad74-3688a",
+      "rules": []
+    },
+    {
+      "id": "LINE-c472c-4cd14",
+      "src_node_id": "APPROVAL-8ad74-3688a",
+      "dst_node_id": "CC-00c74-589b1",
+      "rules": []
+    },
+    {
+      "id": "LINE-9cb49-bca1a",
+      "src_node_id": "CC-00c74-589b1",
+      "dst_node_id": "ROUTER-940b6-d96e9",
+      "rules": []
+    },
+    {
+      "id": "CONDITION-405db-8f1b8",
+      "src_node_id": "ROUTER-940b6-d96e9",
+      "dst_node_id": "APPROVAL-7d61c-54939",
+      "rules": [
+        {
+          "type": 3,
+          "title": "申请人",
+          "control_id": "item-applyer",
+          "singleselitems": [],
+          "numrangeitems": [],
+          "departrangeitems": [
+            {
+              "vid": "1688851275988203"
+            }
+          ],
+          "multiselitems": [],
+          "singleselitems_ids": [],
+          "multiselitems_ids": [],
+          "multiseli_type": "MultiType_InClude"
+        }
+      ]
+    },
+    {
+      "id": "LINE-50582-f1a16",
+      "src_node_id": "APPROVAL-7d61c-54939",
+      "dst_node_id": "ROUTER-69592-fea48",
+      "rules": []
+    },
+    {
+      "id": "CONDITION-78c1b-a3ba2",
+      "src_node_id": "ROUTER-69592-fea48",
+      "dst_node_id": "APPROVAL-34535-5242b",
+      "rules": [
+        {
+          "type": 3,
+          "title": "申请人",
+          "control_id": "item-applyer",
+          "singleselitems": [],
+          "numrangeitems": [],
+          "departrangeitems": [
+            {
+              "vid": "1688851275988203"
+            }
+          ],
+          "multiselitems": [],
+          "singleselitems_ids": [],
+          "multiselitems_ids": [],
+          "multiseli_type": "MultiType_InClude"
+        }
+      ]
+    },
+    {
+      "id": "LINE-d34ef-fc8f9",
+      "src_node_id": "APPROVAL-34535-5242b",
+      "dst_node_id": "CC-d7d72-74b9c",
+      "rules": []
+    },
+    {
+      "id": "CONDITION-02305-1e693",
+      "src_node_id": "ROUTER-69592-fea48",
+      "dst_node_id": "CC-f9a08-d9091",
+      "rules": []
+    },
+    {
+      "id": "CONDITION-1f2af-58ec0",
+      "src_node_id": "ROUTER-940b6-d96e9",
+      "dst_node_id": "CC-acd73-17d3e",
+      "rules": []
+    },
+    {
+      "id": "LINE-97632-7a8d9",
+      "src_node_id": "CC-d7d72-74b9c",
+      "dst_node_id": "END",
+      "rules": []
+    },
+    {
+      "id": "LINE-83002-a44ab",
+      "src_node_id": "CC-f9a08-d9091",
+      "dst_node_id": "END",
+      "rules": []
+    },
+    {
+      "id": "LINE-8300f-b9fa5",
+      "src_node_id": "CC-acd73-17d3e",
+      "dst_node_id": "END",
+      "rules": []
+    }
+  ],
+  "nodes": [
+    {
+      "id": "START",
+      "type": "START",
+      "name": "申请人"
+    },
+    {
+      "id": "APPROVAL-8ad74-3688a",
+      "type": "APPROVAL",
+      "name": "审批人"
+    },
+    {
+      "id": "CC-00c74-589b1",
+      "type": "CC",
+      "name": "抄送人4"
+    },
+    {
+      "id": "ROUTER-940b6-d96e9",
+      "type": "ROUTER",
+      "name": "分支"
+    },
+    {
+      "id": "APPROVAL-7d61c-54939",
+      "type": "APPROVAL",
+      "name": "直接上级"
+    },
+    {
+      "id": "ROUTER-69592-fea48",
+      "type": "ROUTER",
+      "name": "分支"
+    },
+    {
+      "id": "APPROVAL-34535-5242b",
+      "type": "APPROVAL",
+      "name": "审批人"
+    },
+    {
+      "id": "CC-d7d72-74b9c",
+      "type": "CC",
+      "name": "抄送人"
+    },
+    {
+      "id": "CC-f9a08-d9091",
+      "type": "CC",
+      "name": "抄送人"
+    },
+    {
+      "id": "CC-acd73-17d3e",
+      "type": "CC",
+      "name": "抄送人"
+    },
+    {
+      "id": "END",
+      "type": "END",
+      "name": "流程结束"
+    }
+  ]
+}

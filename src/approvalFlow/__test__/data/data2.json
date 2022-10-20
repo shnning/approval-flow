@@ -1,0 +1,89 @@
+{
+  "lines": [
+    {
+      "id": "LINE-a266b-71866",
+      "src_node_id": "START",
+      "dst_node_id": "APPROVAL-8ad74-3688a",
+      "rules": []
+    },
+    {
+      "id": "LINE-ad3cb-d2818",
+      "src_node_id": "APPROVAL-8ad74-3688a",
+      "dst_node_id": "CC-00c74-589b1",
+      "rules": []
+    },
+    {
+      "id": "LINE-a20c4-afa67",
+      "src_node_id": "CC-00c74-589b1",
+      "dst_node_id": "ROUTER-940b6-d96e9",
+      "rules": []
+    },
+    {
+      "id": "CONDITION-405db-8f1b8",
+      "src_node_id": "ROUTER-940b6-d96e9",
+      "dst_node_id": "APPROVAL-7d61c-54939",
+      "rules": [
+        {
+          "type": 3,
+          "title": "申请人",
+          "control_id": "item-applyer",
+          "singleselitems": [],
+          "numrangeitems": [],
+          "departrangeitems": [
+            {
+              "vid": "1688851275988203"
+            }
+          ],
+          "multiselitems": [],
+          "singleselitems_ids": [],
+          "multiselitems_ids": [],
+          "multiseli_type": "MultiType_InClude"
+        }
+      ]
+    },
+    {
+      "id": "CONDITION-1f2af-58ec0",
+      "src_node_id": "ROUTER-940b6-d96e9",
+      "dst_node_id": "END",
+      "rules": []
+    },
+    {
+      "id": "LINE-16b21-f949d",
+      "src_node_id": "APPROVAL-7d61c-54939",
+      "dst_node_id": "END",
+      "rules": []
+    }
+  ],
+  "nodes": [
+    {
+      "id": "START",
+      "type": "START",
+      "name": "申请人"
+    },
+    {
+      "id": "APPROVAL-8ad74-3688a",
+      "type": "APPROVAL",
+      "name": "审批人"
+    },
+    {
+      "id": "CC-00c74-589b1",
+      "type": "CC",
+      "name": "抄送人4"
+    },
+    {
+      "id": "ROUTER-940b6-d96e9",
+      "type": "ROUTER",
+      "name": "分支"
+    },
+    {
+      "id": "APPROVAL-7d61c-54939",
+      "type": "APPROVAL",
+      "name": "直接上级"
+    },
+    {
+      "id": "END",
+      "type": "END",
+      "name": "流程结束"
+    }
+  ]
+}
